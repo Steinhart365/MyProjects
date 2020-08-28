@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> YEVE_rebbeim</title>
+    <link rel="stylesheet" type="text/css" href="../styling/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styling/hanhallah.css">
+    <link rel="stylesheet" href="../styling/jquery12custom.css">
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../jQuery/jquery12-ui.min.js"></script>
+
+    <!-- enbedded script to run the date-picker below-->
+    <script>
+        $(document).ready(function() {
+            $("#datepicker").datepicker({
+                minDate: new Date(),
+                maxDate: +100,
+                showButtonPanel: false
+            });
+        });
+    </script>
+</head>
+
+<!-- The header, standard to all pages and formatted by CSS-->
+<header>
+    <p>Yeshivas Emes Vi&#8217;Emunah</p>
+</header>
+
+<!-- Under the header is a standard nav section to get to other pages on our site, 
+with the page in use marked active.-->
+<div>
+    <nav class="nav nav-pills flex-column flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Home Page</a>
+        <a class="flex-sm-fill text-sm-center nav-link active" href="hanhallah.html">הנהלה</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="mission.html">Mission and Methods</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="student_info.html">About Our בחורים</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="parents.html">Parents</a>
+    </nav>
+</div>
+
+<body>
+    <h1>The Best of The Best </h1>
+    <br>
+    <p> Our Rebbeim are hand-picked from around the world and have incredible backgrounds and accomplishments in learning, teaching, and living. Each and every Rebbe has a skillset that uniquely qualifies him to help his talmidim reach their true potential.
+    </p>
+
+    <div>
+        <img src="../img/rabbi.jpeg" alt="Rabbi Greenman, Tenth Grade">
+
+    </div>
+
+    <!-- Date picker -->
+
+    <!--NOTE- on this pg no submission or processing is done, choosing, date/city affects diplay only-->
+
+    <div id="date_picker">
+        <h4>Click to vote on a date for a parlor meeting with our Hanhallah in your town!</h4>
+
+        <label id="l1"> Your Vote: </label>
+        <label><input type="text" id="datepicker"></label>
+
+    </div>
+
+    <!-- additional form to select town-->
+    <div id="towns">
+
+        <form action="http://www.notreal.com">
+            <h5>Now, which town was that again?</h5>
+            <p id="rb">
+                <input type="radio" name="home" value="edison" />Edison
+                <input type="radio" name="home" value="passaic" />Passaic
+                <input type="radio" name="home" value="monsey" />Monsey
+                <input type="radio" name="home" value="queens" />Queens
+            </p>
+            <br>
+            <p id="if"> If you live elsewhere be sure to contact our offices and we'll do our best to set a date to come to you or you to us, subject to schedules.</p>
+        </form>
+    </div>
+    <br><br><br>
+</body>
+
+<!--standard uniform footer-->
+
+<footer>
+    <nav id="footer">
+        <a class="flex-sm-fill text-sm-center nav-link" href="get_in_touch.html">Contact Us</a>
+    </nav>
+</footer>

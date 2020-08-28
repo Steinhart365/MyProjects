@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: center;
+}
+
+body {
+    background-color: lightcyan;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    margin: 40px;
+}
+
+#accordion {
+    width: 400px;
+    margin-left: 400px;
+}
+
+ul {
+    padding-left: 12px;
+}
+
+li {
+    padding-bottom: .5em;
+}

@@ -1,0 +1,19 @@
+#l1 :hover {
+    text-decoration: wavy;
+    font-weight: bold;
+    color: seagreen;
+}
+
+h5 {
+    text-align: right;
+    margin-right: 300px;
+}
+
+#rb {
+    text-align: right;
+    margin-right: 300px;
+}
+
+#if {
+    text-align: center;
+}

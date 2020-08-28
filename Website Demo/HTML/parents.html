@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> YEVE_get_info</title>
+    <link rel="stylesheet" type="text/css" href="../styling/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styling/parents.css">
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../jQuery/load_data.js"></script>
+
+</head>
+
+<!-- The header, standard to all pages and formatted by CSS-->
+<header>
+    <p>Yeshivas Emes Vi&#8217;Emunah</p>
+</header>
+
+<!-- Under the header is a standard nav section to get to other pages on our site, 
+with the page in use marked active.-->
+<div>
+    <nav class="nav nav-pills flex-column flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Home Page</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="hanhallah.html">הנהלה</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="mission.html">Mission and Methods</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="student_info.html">About Our בחורים</a>
+        <a class="flex-sm-fill text-sm-center nav-link active" href="parents.html">Parents</a>
+    </nav>
+</div>
+
+<body>
+    <h1>The Boring Page</h1><br>
+
+    <p> Click an option to see the nitty gritty info about our institution</p>
+    <div id="options">
+        <nav class="nav nav-pills flex-column flex-sm-row">
+            <a id="schedule" href="#">
+                <h6>Schedule</h6>
+            </a> |
+            <a id="grades" href="#">
+                <h6>Grades Achieved</h6>
+            </a>|
+            <a id="appraisals" href="#">
+                <h4>Brachos HaGedolim</h4>
+            </a>
+        </nav>
+    </div>
+
+    <div id="display"></div>
+
+</body>
+
+<!--standard uniform footer-->
+
+<footer>
+    <nav id="footer">
+        <a class="flex-sm-fill text-sm-center nav-link" href="get_in_touch.html">Contact Us</a>
+    </nav>
+</footer>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> YEVE_contact</title>
+    <link rel="stylesheet" type="text/css" href="../styling/main.css">
+    <link rel="stylesheet" type="text/css" href="../styling/get_in_touch.css">
+    <link rel="stylesheet" type="text/css" href="../styling/jquery12custom.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../jQuery/jquery12-ui.min.js"></script>
+
+    <!-- The script that powers the button and dialog-->
+    <script>
+        $(document).ready(function() {
+            $("#contact").button();
+            $("#contact").click(function() {
+                $("#dialog").dialog({
+                    modal: true
+                });
+            });
+        });
+    </script>
+</head>
+
+<!-- The header, standard to all pages and formatted by CSS-->
+<header>
+    <p>Yeshivas Emes Vi&#8217;Emunah</p>
+</header>
+
+<!-- Under the header is a standard nav section to get to other pages on our site, 
+with the page in use marked active, where relevant (excluding pgs not in this list, like this one).-->
+<div>
+    <nav class="nav nav-pills flex-column flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Home Page</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="hanhallah.html">הנהלה</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="mission.html">Mission and Methods</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="student_info.html">About Our בחורים</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="parents.html">Parents</a>
+    </nav>
+</div>
+
+<body>
+    <h2> It is an honor to be here to assist you; feel free to reach out to our staff about any questions.</h2>
+    <br>
+
+    <!-- button (pic) that activates dialouge box -->
+
+    <section>
+        <figure>
+            <figcaption>click the pic to see our 100% commitment policy</figcaption>
+            <a id="contact"><img src="../img/connections.jpeg" alt="connections" width="300" height="300" /></a>
+        </figure>
+        <div id="dialog" title="Here to Help. Always." style="display:none;">
+            <p>We hereby commit ourself to the fullest extent of our capabilities, to do everything in our power as individuals, leaders, and an organization to help all those who seek our aid with warmth and kavod as they deserve. This applies to parents,
+                applicants, talmidim, and alumni alike.</p>
+        </div>
+    </section>
+    <br>
+
+    <!-- The div contains form to enter personal info and js will validate before submitting-->
+
+    <div class="form">
+        <h1>Fill out this Form to set up a time to talk or meet</h1>
+
+        <form id="clientInfo" name="clientInfo" action="reply.html" method="get">
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+            <span>*</span><br>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+            <span>*</span><br>
+
+            <!-- setting type to email causes most browsers to validate, but we include our own validation as well in js file-->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+            <span>*</span><br>
+
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip">
+            <span>*</span><br>
+            <div id="end_of_form">
+                <label id="radio">How can we help? </label>
+                <input type="radio" id="applying" name="choice" value="applying">Questions About Applying
+                <input type="radio" id="events" name="choice" value="events">Events Schedule
+                <input type="radio" id="rules" name="choice" value="rules">Policies and Records
+                <input type="radio" id="misc" name="choice" value="misc"> Other
+                <span></span><br>
+
+                <label>&nbsp;</label>
+                <input type="submit" id="submit" name="submit" value="Send info">
+            </div>
+        </form>
+
+        <!--script for form validation-->
+        <script src="../jQuery/validate.js"></script>
+
+    </div>
+    <br><br><br><br><br><br><br>
+</body>
+
+<!--standard uniform footer-->
+
+<footer>
+    <nav id="footer">
+        <a class="flex-sm-fill text-sm-center nav-link active" href="get_in_touch.html">Contact Us</a>
+    </nav>
+</footer>

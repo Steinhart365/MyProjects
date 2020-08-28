@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> YEVE_students</title>
+    <!-- Head contains links to jquery libraries, my css, and the script for the accordion-->
+    <link rel="stylesheet" type="text/css" href="../styling/main.css">
+    <link rel="stylesheet" type="text/css" href="../styling/students.css">
+    <link rel="stylesheet" type="text/css" href="../styling/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="../jQuery/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#accordion").accordion({
+                event: "click",
+                heightStyle: "content",
+                collapsible: true
+            });
+        });
+    </script>
+</head>
+
+<!-- The header, standard to all pages and formatted by CSS-->
+<header>
+    <p>Yeshivas Emes Vi&#8217;Emunah</p>
+</header>
+
+<!-- Under the header is a standard nav section to get to other pages on our site, 
+with the page in use marked active.-->
+<div>
+    <nav class="nav nav-pills flex-column flex-sm-row ">
+        <a class="flex-sm-fill text-sm-center nav-link" href="index.html ">Home Page</a>
+        <a class="flex-sm-fill text-sm-center nav-link " href="hanhallah.html ">הנהלה</a>
+        <a class="flex-sm-fill text-sm-center nav-link " href="mission.html ">Mission and Methods</a>
+        <a class="flex-sm-fill text-sm-center nav-link active " href="student_info.html ">About Our בחורים</a>
+        <a class="flex-sm-fill text-sm-center nav-link " href="parents.html ">Parents</a>
+    </nav>
+</div>
+
+<body>
+
+    <h2> Meet our Precious Talmidim</h2>
+    <p>Year after year, we are unbelievably proud of the extraordinary growth every boy displays. The strides they take push all of us around them to step up our own games too. Take a look at some of our young prospects' amazing achievemnts for yourself!
+    </p><br>
+
+    <section>
+        <div id="accordion">
+            <h3>Boruch Epstein</h3>
+            <div>
+                <p>Boruch is a naturally sweet and compassionate friend, and a great leader. With extra Sedarim spread all throughout the day and night, nooone knows how he even has so much time to help anyone in need with his classic smile!
+                </p>
+            </div>
+            <h3>Yissochar Green</h3>
+            <div>
+                <p>Yissachar can truly do it all. His davening shakes the gates of shamayim, he is as quick in learning as any bochur you've ever seen, and he spends extra time working on mussar and halacha sfarim, in addition to recently completing the
+                    whole Seder Nashim!
+                </p>
+            </div>
+            <h3>Shlomo Gutmann</h3>
+            <div>
+                <p>Shlomo is the first boy in his family to go to yeshiva since the War, but yo wouldn't know it. He fits right in and has been extremely succesful in his learning, and thanks to his strong background in Hebrew and his knack for creativity,
+                    he is working on helping the Yeshiva publish a kuntris at the end of the year!
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+<br><br>
+
+<!--standard uniform footer-->
+<footer>
+    <nav id="footer">
+        <a class="flex-sm-fill text-sm-center nav-link " href="get_in_touch.html ">Contact Us</a>
+    </nav>
+</footer>

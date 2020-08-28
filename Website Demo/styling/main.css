@@ -1,0 +1,111 @@
+/*This file cntains the standard formatting for the entire site, and some code that may be applied only
+ to the index page and its carousel or that will be overridden in other pages by their own css */
+
+* {
+    font-family: "Times-New-Roman", "David", Serif;
+    padding: 10px;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    background-position: 0vmax;
+    background-color: midnightblue;
+    height: 125px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 36px;
+    font-family: "Eduardian-Script_ITC", "Britannic_Bold", Serif;
+    color: white;
+    text-decoration-line: underline;
+}
+
+body {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div>nav {
+    width: max-content justify;
+    height: 60px;
+    align-items: center;
+    border-bottom: 5px double grey;
+}
+
+nav a {
+    height: 35px;
+    color: firebrick;
+}
+
+
+/* a rollover effect, making the nav dynamic */
+
+nav a:hover {
+    color: darkgreen;
+    background-color: lavender;
+}
+
+body>p {
+    font-size: 18px;
+    text-align: left;
+}
+
+h5 {
+    text-align: center;
+}
+
+
+/*Setting up the nav in footer with logo as background image, selected by id, as well as other styling */
+
+#footer {
+    background-image: url(../img/emes_logo.jpeg);
+    background-repeat: repeat-x;
+    background-position: center;
+    font-weight: bold;
+    color: crimson;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    height: 120px;
+}
+
+
+/* formatting for the carousel on home page*/
+
+#carousel {
+    margin-left: 200px;
+}
+
+.button_panel {
+    float: left;
+    width: 75px;
+    height: 75px;
+}
+
+.button_panel img {
+    width: 50px;
+    height: 50px;
+}
+
+#display_panel {
+    height: 210px;
+    width: 600px;
+    overflow: hidden;
+    float: left;
+}
+
+#image_list {
+    position: relative;
+    left: 0px;
+    width: 1900px;
+    list-style: none;
+}
+
+#image_list li {
+    float: left;
+    width: 300px;
+}
+
+#image_list li img {
+    width: 290px;
+}

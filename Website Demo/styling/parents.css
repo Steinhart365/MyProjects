@@ -1,0 +1,13 @@
+h1 {
+    text-decoration: double;
+    text-align: center;
+}
+
+b {
+    text-decoration: underline;
+}
+
+#options a {
+    color: darkgreen;
+    border-color: darkorchid;
+}

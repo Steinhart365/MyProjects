@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> YEVE_mission</title>
+    <link rel="stylesheet" type="text/css" href="../styling/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<!-- The header, standard to all pages and formatted by CSS-->
+<header>
+    <p>Yeshivas Emes Vi&#8217;Emunah</p>
+</header>
+
+<!-- Under the header is a standard nav section to get to other pages on our site, 
+with the page in use marked active.-->
+<div>
+    <nav class="nav nav-pills flex-column flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Home Page</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="hanhallah.html">הנהלה</a>
+        <a class="flex-sm-fill text-sm-center nav-link active" href="mission.html">Mission and Methods</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="student_info.html">About Our בחורים</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="parents.html">Parents</a>
+    </nav>
+</div>
+
+<body>
+    <!--the div and script for the vue code in the js file-->
+    <div id="main">
+        <div id="info">
+
+            <!-- computed property to diplay headine in h1 -->
+            <h1>{{headline}}</h1>
+
+            <p>Our mission is simple: we have set out to perfect the traditional American yeshiva syytem and optimize it for top prospects so that they can be fostered and grow into the leaders of the next generation. Through our uniquely well-rounded program,
+                with rigorous curriculum, stark leadership, and unparralleled opportunities for personal growth, each boy who joins the yeshiva sets out on an amazing journey of self-perfection that they will never forget.</p>
+            <br>
+
+            <!-- the h3 uses style binding to change the display of the header-->
+            <h3 :style="styler"> Programs that Touch the Heart, and the Heavens</h3>
+
+            <p> In our ongoing endeavor to ensure the very best for our talmidim, we have extremely innovative and addaptive programs to help facilitate each boy's personal wants, needs, and goals, while maintaining excellence of quality for all. This includes
+                our mussar vaadim, simchas-emes program, schmoozin from the Mashgiach, and more!</p>
+
+            <!-- v-if to display message only when relevant based on current date-->
+            <p v-if="deadline > today"> Get excited! This year's ירכי כלה, where you can experience the schedule yourself for a week, is פרשת ואתחנן!</p>
+
+            <suggestions :deadline="deadline" :today="today" @suggestion_made="confirmation"></suggestions>
+            <div id="old"></div>
+        </div>
+    </div>
+
+    <script src="../jQuery/mission.js"></script>
+
+    <div id="system_notes" style="display: none;">
+        <!---->
+        <!-- old suggestions have no display because they're for the school, not other viewers-->
+    </div>
+</body>
+
+<!--standard uniform footer-->
+
+<footer>
+    <nav id="footer">
+        <a class="flex-sm-fill text-sm-center nav-link" href="get_in_touch.html">Contact Us</a>
+    </nav>
+</footer>

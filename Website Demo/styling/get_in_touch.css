@@ -1,0 +1,60 @@
+#dialog {
+    position: relative;
+    width: 350px;
+    height: 300px;
+}
+
+#contact {
+    height: 310px;
+    width: 350px;
+    float: left;
+    margin-right: 30px;
+}
+
+.form {
+    float: right;
+}
+
+footer {
+    margin-top: 600px;
+}
+
+h1 {
+    font-size: 175%;
+    text-decoration: wavy;
+    margin-bottom: .5em;
+}
+
+label {
+    width: 11em;
+    text-align: right;
+}
+
+input {
+    height: 2em;
+    width: 12em;
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
+span {
+    color: red;
+    margin-left: .5em;
+}
+
+#submit {
+    height: 3em;
+    width: 7.5em;
+    border-color: chocolate;
+}
+
+#submit:active {
+    background-color: darkturquoise;
+}
+
+#applying,
+#events,
+#rules,
+#misc {
+    width: 1em;
+}
